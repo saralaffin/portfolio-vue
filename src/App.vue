@@ -2,18 +2,21 @@
   <div id="app">
     <NavBar msg="Welcome to Your Vue.js App" />
     <Header />
+    <About />
   </div>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
 import Header from "./components/Header.vue";
+import About from "./components/About.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     NavBar,
+    About,
   },
 };
 </script>
@@ -23,5 +26,33 @@ export default {
   box-sizing: border-box;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
+}
+h1,
+h2 {
+  font-size: 6vh;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  opacity: 0.85;
+  margin-top: 15vh;
+  text-align: center;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+a {
+  color: white;
+  padding: 1.2em;
+  background: #4679a6;
+  text-decoration: none;
+  border-radius: 0.5em;
+  text-align: center;
+  max-width: 80vw;
+  opacity: 0.85;
+}
+@media only screen and (min-width: 780px) {
+  h1 {
+    font-size: 10vh;
+    margin-top: 11vh;
+  }
 }
 </style>

@@ -6,6 +6,7 @@
     <Background />
     <Skills />
     <Projects />
+    <Contact />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import About from "./components/About.vue";
 import Background from "./components/Background.vue";
 import Skills from "./components/Skills.vue";
 import Projects from "./components/Projects.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
@@ -26,6 +28,7 @@ export default {
     Background,
     Skills,
     Projects,
+    Contact,
   },
 };
 </script>

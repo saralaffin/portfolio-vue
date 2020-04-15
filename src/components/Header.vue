@@ -25,7 +25,11 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+h1 {
+  opacity: 0.85;
+}
 a {
   margin-top: 40vh;
+  opacity: 0.85;
 }
 </style>

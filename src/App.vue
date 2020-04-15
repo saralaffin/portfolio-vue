@@ -5,6 +5,7 @@
     <About />
     <Background />
     <Skills />
+    <Projects />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Header from "./components/Header.vue";
 import About from "./components/About.vue";
 import Background from "./components/Background.vue";
 import Skills from "./components/Skills.vue";
+import Projects from "./components/Projects.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     About,
     Background,
     Skills,
+    Projects,
   },
 };
 </script>
@@ -46,7 +49,6 @@ h2 {
   font-size: 6vh;
   font-family: "Catamaran", sans-serif;
   color: var(--white);
-  opacity: 0.85;
   margin-top: 15vh;
   text-align: center;
   margin-left: 3vw;
@@ -61,7 +63,6 @@ a {
   border-radius: 0.5em;
   text-align: center;
   max-width: 80vw;
-  opacity: 0.85;
 }
 @media only screen and (min-width: 780px) {
   h1 {

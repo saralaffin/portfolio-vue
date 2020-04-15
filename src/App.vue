@@ -25,6 +25,14 @@ export default {
 </script>
 
 <style>
+:root {
+  --black: #04020d;
+  --dark-blue: #4679a6;
+  --med-blue: #659dbf;
+  --light-blue: #8fbdd9;
+  --beige: #d9c2a7;
+  --white: #fafafa;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,7 +42,7 @@ h1,
 h2 {
   font-size: 6vh;
   font-family: "Catamaran", sans-serif;
-  color: white;
+  color: var(--white);
   opacity: 0.85;
   margin-top: 15vh;
   text-align: center;
@@ -43,9 +51,9 @@ h2 {
 }
 
 a {
-  color: white;
+  color: var(--white);
   padding: 1.2em;
-  background: #4679a6;
+  background: var(--dark-blue);
   text-decoration: none;
   border-radius: 0.5em;
   text-align: center;

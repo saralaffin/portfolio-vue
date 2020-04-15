@@ -28,13 +28,13 @@ export default {
 
 <style scoped>
 #about {
-  background-color: #fafafa;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 h2 {
-  color: #4679a6;
+  color: var(--dark-blue);
 }
 p {
   text-align: center;

@@ -33,13 +33,13 @@ export default {
 
 <style scoped>
 #background {
-  background-color: #4679a6;
+  background-color: var(--dark-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 h2 {
-  color: #fafafa;
+  color: var(--white);
 }
 p {
   text-align: center;

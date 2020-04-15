@@ -15,8 +15,8 @@ export default {
 
 <style scoped>
 .navbar {
-  background-color: rgb(126, 126, 241);
-  color: white;
+  background-color: var(--light-blue);
+  color: var(--white);
   float: right;
   width: fit-content;
   position: fixed;

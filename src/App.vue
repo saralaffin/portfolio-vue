@@ -4,6 +4,7 @@
     <Header />
     <About />
     <Background />
+    <Skills />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import NavBar from "./components/NavBar.vue";
 import Header from "./components/Header.vue";
 import About from "./components/About.vue";
 import Background from "./components/Background.vue";
+import Skills from "./components/Skills.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     NavBar,
     About,
     Background,
+    Skills,
   },
 };
 </script>

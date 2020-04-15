@@ -3,6 +3,7 @@
     <NavBar msg="Welcome to Your Vue.js App" />
     <Header />
     <About />
+    <Background />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import NavBar from "./components/NavBar.vue";
 import Header from "./components/Header.vue";
 import About from "./components/About.vue";
+import Background from "./components/Background.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     Header,
     NavBar,
     About,
+    Background,
   },
 };
 </script>

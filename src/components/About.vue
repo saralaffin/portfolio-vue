@@ -3,7 +3,7 @@
     <h2>
       I've learned a lot over the past few months!
     </h2>
-    <p class="lead mb-5">
+    <p>
       I've just graduated from a coding bootcamp, General Assembly, in
       Washington, DC. This portfolio showcases a few of my projects.
     </p>
@@ -40,6 +40,9 @@ p {
   text-align: center;
   padding: 1em;
   margin-top: 4vh;
+}
+p,
+.link-container {
   margin-bottom: 10vh;
 }
 .link-container {

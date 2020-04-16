@@ -26,7 +26,8 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-h2 {
+h2,
+h4 {
   color: var(--dark-blue);
 }
 i {
@@ -40,5 +41,9 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+p {
+  text-align: center;
+  padding: 1em;
 }
 </style>

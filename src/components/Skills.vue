@@ -4,18 +4,18 @@
       Skills
     </h2>
     <sub-skills
-      icon="pencil"
+      icon="icon-pencil"
       title="Languages"
       content="HTML, CSS, JavaScript, Python, SQL"
     />
     <sub-skills
-      icon="book-open"
+      icon="icon-edit"
       title="Frameworks/libraries"
       content="Bootstrap, Django, Express, Flask, Git, MERN Stack, Mongoose,
               Node.js, Peewee, React, Vue"
     />
     <sub-skills
-      icon="envelope-letter"
+      icon="icon-envelope-alt"
       title="and more!"
       content="APIs, Github, Heroku, MongoDB, Netlify, PostgreSQL, Responsive
               Design, RESTful API, Storybook, Ubuntu Linux, Visual Studio Code"

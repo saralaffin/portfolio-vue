@@ -4,9 +4,9 @@
       {{ description }}
     </p>
     <div class="link-container">
-      <a :href="githubURL">GitHub</a>
+      <a :href="githubURL"><i class="icon-github"></i></a>
       <a :href="deployedURL">
-        Deployed
+        <i class="icon-share"></i>
       </a>
     </div>
   </div>
@@ -41,5 +41,12 @@ h2 {
 }
 a {
   margin: 0.2em;
+  font-size: 5vh;
+  width: 7vh;
+  height: 7vh;
+  padding: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

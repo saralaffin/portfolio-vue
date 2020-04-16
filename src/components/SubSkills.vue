@@ -1,6 +1,6 @@
 <template>
   <div class="sub-skills">
-    <!-- <p>{{ icon }}</p> -->
+    <i :class="icon"></i>
     <h4>
       {{ title }}
     </h4>
@@ -28,5 +28,17 @@ export default {
 }
 h2 {
   color: var(--dark-blue);
+}
+i {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-radius: 10vh;
+  height: 10vh;
+  width: 10vh;
+  font-size: 4vh;
+  margin: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

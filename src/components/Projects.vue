@@ -5,9 +5,29 @@
     </h2>
     <project
       id="pawsitivity"
-      description="First try!"
-      githubURL="#"
-      deployedURL="#"
+      description="Developed a mock Instagram MVP utilizing a MERN stack in 4.5
+                    days with a team of 4 people"
+      githubURL="https://github.com/saralaffin/best-in-show"
+      deployedURL="https://pawsitivity.netlify.com/"
+    />
+    <project
+      id="cotripper"
+      description="Contributing to an open source, full stack travel application for single mothers built using Django and React"
+      githubURL="https://github.com/CotripperPlatform/CoTrip"
+      deployedURL="https://cotripper.netlify.app/"
+    />
+    <project
+      id="hanoi"
+      description="First front-end project using HTML, CSS, and vanilla JavaScript to build a front-end game"
+      githubURL="https://github.com/saralaffin/front-end-game-tower-of-hanoi"
+      deployedURL="https://saralaffin.github.io/front-end-game-tower-of-hanoi/"
+    />
+    <project
+      id="clean"
+      description="Utilized HTML and custom CSS to build a responsive website
+                    showcasing service for a cleaning company. My first General Assembly project!"
+      githubURL="https://github.com/saralaffin/responsive-website"
+      deployedURL="https://saralaffin.github.io/responsive-website/"
     />
   </div>
 </template>
@@ -38,5 +58,14 @@ h2 {
 }
 #pawsitivity {
   background-image: url("../assets/pawsitivity.png");
+}
+#cotripper {
+  background-image: url("../assets/cotripper.png");
+}
+#hanoi {
+  background-image: url("../assets/tower-of-hanoi.png");
+}
+#clean {
+  background-image: url("../assets/responsive-website.png");
 }
 </style>

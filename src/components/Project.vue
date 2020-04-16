@@ -26,8 +26,12 @@ export default {
 <style scoped>
 .project {
   background-color: var(--beige);
+  background-position: center;
+  background-size: cover;
+  height: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 h2 {

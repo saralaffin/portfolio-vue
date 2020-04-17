@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBar msg="Welcome to Your Vue.js App" />
+    <NavBar :scrollPosition="scrollPosition" />
     <Header />
     <About />
     <Background />
@@ -29,6 +29,19 @@ export default {
     Skills,
     Projects,
     Contact,
+  },
+  data() {
+    return { scrollPosition: null };
+  },
+
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    },
+  },
+
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
   },
 };
 </script>

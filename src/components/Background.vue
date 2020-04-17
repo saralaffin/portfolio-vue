@@ -64,7 +64,7 @@ h2 {
   color: var(--white);
 }
 p {
-  padding: 1em;
+  padding: 1em 2em;
 }
 .link-container {
   display: flex;

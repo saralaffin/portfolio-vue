@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div id="debugDiv">{{ debugStr }}</div>
     <div class="navbar">
       <template v-for="section in sections">
         <a
@@ -22,79 +21,37 @@
 </template>
 
 <script>
-// utility copied from https://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-function elementInViewport(el) {
-  let top = el.offsetTop;
-  let height = el.offsetHeight;
-
-  // while (el.offsetParent) {
-  //   el = el.offsetParent;
-  //   top += el.offsetTop;
-  // }
-
-  return (
-    top >= window.scrollY && top + height <= window.scrollY + window.innerHeight
-  );
-}
-
 export default {
   name: "NavBar",
-  props: {
-    scrollPosition: Number,
-  },
   data() {
     return {
-      windowHeight: window.innerHeight,
       sections: ["about", "background", "skills", "projects", "contact"],
-      activeSection: "try",
+      activeSection: "",
     };
   },
-  computed: {
-    debugStr() {
-      let str = "debug";
-      const el = document.getElementById("about");
-
-      // // var top = el.offsetTop; //1607
-      // // var height = el.offsetHeight; //1254
-
-      // // // while (el.offsetParent) {
-      // // //   el = el.offsetParent;
-      // // //   top += el.offsetTop;
-      // // // }
-
-      // // str =
-      // //   top >= window.pageYOffset &&
-      // //   top + height <= window.pageYOffset + window.innerHeight;
-
-      str = el.offsetHeight;
-      return str;
-    },
+  mounted() {
+    let observer = new IntersectionObserver(this.handler, {
+      threshold: 0.1, //trying to fix a bug, "projects" doesn't highlight after scolling up from contact section
+    });
+    this.sections.forEach((section) => {
+      observer.observe(document.getElementById(section));
+    });
   },
-  created() {
-    document.addEventListener("scroll", this.handleScroll);
-  },
-  // destroyed() {
-  //   document.removeEventListener("scroll", this.handleScroll);
-  // },
   methods: {
-    handleScroll() {
-      // console.log(window.scrollY);
-      let vx = this;
-      vx.sections.find((section) => {
-        const el = document.getElementById(section);
-        if (elementInViewport(el)) {
-          vx.activeSection = section;
+    handler(entries) {
+      for (const entry of entries) {
+        const isVisible = entry.isIntersecting;
+
+        if (isVisible) {
+          this.activeSection = entry.target.id;
         }
-      });
+      }
     },
   },
 };
 </script>
 
 <style scoped>
-#debugDiv {
-  position: fixed;
-}
 .navbar {
   position: fixed;
   top: 0;

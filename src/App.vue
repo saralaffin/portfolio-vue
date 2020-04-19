@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBar :scrollPosition="scrollPosition" />
+    <NavBar />
     <Header />
     <About />
     <Background />
@@ -29,19 +29,6 @@ export default {
     Skills,
     Projects,
     Contact,
-  },
-  data() {
-    return { scrollPosition: null };
-  },
-
-  methods: {
-    updateScroll() {
-      this.scrollPosition = window.scrollY;
-    },
-  },
-
-  mounted() {
-    window.addEventListener("scroll", this.updateScroll);
   },
 };
 </script>
